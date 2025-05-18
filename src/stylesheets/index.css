@@ -1,0 +1,15 @@
+body {
+  font-family: "Ancizar Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.nav-item {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ylo {
+  background-color: #f5cf14;
+}
