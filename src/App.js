@@ -7,6 +7,7 @@ import About from './pages/About';
 import Order from './pages/Order';
 import Login from './pages/Login';
 import Reservations from './pages/Reservations';
+import Menu from './pages/Menu';
 
 export default function App() {
 
@@ -24,6 +25,7 @@ export default function App() {
           <Route path='/order' element={<Order />} />
           <Route path='/login' element={<Login />} />
           <Route path='/reserve' element={<Reservations />} />
+          <Route path='/menu' element={<Menu />} />
         </Routes>
       </BrowserRouter>
       <Footer />

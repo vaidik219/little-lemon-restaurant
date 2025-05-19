@@ -8,7 +8,7 @@ export default function Dishes() {
             <div className="max-w-7xl mx-auto px-4 py-10">
                 <h1 className="text-5xl font-bold text-center mb-10">
                     This week's specials:
-                    <button className="btn btn-link text-4xl">Menu</button>
+                    <a className="btn btn-link text-4xl" href="/menu">Menu</a>
                 </h1>
                 <div className="flex flex-wrap gap-6 justify-center">
                     <div className="card bg-base-100 w-full md:w-100 shadow-sm">
