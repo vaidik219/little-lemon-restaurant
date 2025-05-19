@@ -20,7 +20,7 @@ export default function App() {
       <Nav scroll={smoothScroll} />
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Main ref={reserveRef} />} />
+          <Route path='/' element={<Main ref={reserveRef} scroll={smoothScroll} />} />
           <Route path='/about' element={<About />} />
           <Route path='/order' element={<Order />} />
           <Route path='/login' element={<Login />} />

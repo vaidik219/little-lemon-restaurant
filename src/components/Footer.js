@@ -51,8 +51,11 @@ export default function Footer() {
                     </div>
                 </nav>
             </footer>
-            <div className="bg-[#4b5e57] text-white">
-                <p className="ml-1">Made with ❤️ by Vaidik</p>
+            <div className="bg-[#4b5e57] text-white" align="center">
+                <p>
+                    Made with ❤️ by <a href="https://www.linkedin.com/in/vaidik-r-038413307/" className="link">Vaidik</a>.
+                </p>
+                <a href="https://github.com/vaidik219/little-lemon-restaurant" className="link" align="end">GitHub Repository</a>
             </div>
         </>
     )

@@ -10,7 +10,7 @@ Website for a chicago based mediterranean restaurant "Little Lemon". This is jus
   <img height="40" src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"/>
 </a>
   <h1 align="center">
-    <a href="https://little-lemon-restaurant-beta.vercel.app/">« Live Demo »</a>
+    <a href="https://little-lemon-restaurant-beta.vercel.app/" target="_blank">« Live Demo »</a>
   </h1>
 </p>
 <p align="center"><img src="mockup.png" align="center"/></p>

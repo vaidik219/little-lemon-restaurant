@@ -1,6 +1,6 @@
 import bg from "../assets/restaurantchef.jpg"
 
-export default function Hero() {
+export default function Hero({ scroll }) {
     return (
         <>
             <div
@@ -14,7 +14,7 @@ export default function Hero() {
                         <p className="mb-5 text-3xl">
                             We are a family owned Mediterranean restaurant, located on Maldove Street in Chicago, Illionis. We focus on traditional recipes served with a modern twist.
                         </p>
-                        <button className="btn btn-active btn-accent btn-xl ylo">Reserve a Table</button>
+                        <a className="btn btn-active btn-accent btn-xl ylo" onClick={scroll}>Reserve a Table</a>
                     </div>
                 </div>
             </div>
