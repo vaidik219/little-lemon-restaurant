@@ -1,7 +1,8 @@
-export default function Reserve() {
+export default function Reserve({ ref }) {
     return (
         <>
-            <div className="mx-auto px-4 py-10 w-full">
+            <div className="mx-auto px-4 py-10 w-full" ref={ref
+            }>
                 <h1 className="text-5xl font-bold text-center mb-10">
                     Reserve a Table
                 </h1>
@@ -18,7 +19,7 @@ export default function Reserve() {
                                 <input type="email" className="input" placeholder="me@example.com" />
                                 <label className="label">Phone Number</label>
                                 <label className="input">
-                                    <span className="label">+91</span>
+                                    <span className="label">+1</span>
                                     <input type="tel" className="input" placeholder="(xxx)-xxx-xxxx" />
                                 </label>
                                 <label className="label">Date & Time</label>

@@ -1,6 +1,12 @@
 import logo from "../assets/Logo .svg"
 
-export default function Nav() {
+export default function Nav({ scroll }) {
+
+    const goToReservations = () => {
+        if (window.location.pathname === "/")
+            scroll()
+        else window.location.assign("/reserve")
+    }
     return (
         <>
             <div className="navbar bg-base-100 shadow-sm">
@@ -12,11 +18,11 @@ export default function Nav() {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Reservations</a></li>
-                            <li><a href="#">Order Online</a></li>
-                            <li><a href="#">Login</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a onClick={goToReservations}>Reservations</a></li>
+                            <li><a href="/order">Order Online</a></li>
+                            <li><a href="/login">Login</a></li>
                         </ul>
                     </div>
                     <a className="btn btn-disabled btn-ghost">
@@ -25,14 +31,14 @@ export default function Nav() {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a className="nav-item" href="#">Home</a></li>
-                        <li><a className="nav-item" href="#">About</a></li>
-                        <li><a className="nav-item" href="#">Reservations</a></li>
-                        <li><a className="nav-item" href="#">Order Online</a></li>
+                        <li><a className="nav-item" href="/">Home</a></li>
+                        <li><a className="nav-item" href="/about">About</a></li>
+                        <li><a className="nav-item" onClick={goToReservations}>Reservations</a></li>
+                        <li><a className="nav-item" href="/order">Order Online</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                <button className="btn btn-active btn-accent nav-item ylo">Login</button>
+                    <a className="btn btn-active btn-accent nav-item ylo" href="/login">Login</a>
                 </div>
             </div>
         </>

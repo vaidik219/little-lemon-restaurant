@@ -3,13 +3,13 @@ import Hero from "../components/Hero";
 import Testimonials from "../components/Testimonials";
 import Reserve from "../components/Reserve";
 
-export default function Main() {
+export default function Main({ ref }) {
     return (
         <>
             <Hero />
             <Dishes />
             <Testimonials />
-            <Reserve />
+            <Reserve ref={ref} />
         </>
     )
 }
