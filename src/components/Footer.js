@@ -51,7 +51,7 @@ export default function Footer() {
                     </div>
                 </nav>
             </footer>
-            <div className="bg-[#4b5e57] text-white" align="center">
+            <div className="bg-[#4b5e57] text-white -mt-1" align="center">
                 <p>
                     Made with ❤️ by <a href="https://www.linkedin.com/in/vaidik-r-038413307/" className="link">Vaidik</a>.
                 </p>
